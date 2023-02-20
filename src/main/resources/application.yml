@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/numble_banking?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Seoul&zeroDateTimeBehavior=convertToNull&rewriteBatchedStatements=true&createDatabaseIfNotExist=true
+    username: root
+    password: ssafy
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: mysql
+    show-sql: true      # DDL 출력 (JPA 쿼리문 확인)
+    hibernate:
+      ddl-auto: create    # 테이블 자동 생성
+
+    properties:
+      hibernate:
+        format_sql: true  # JPA의 구현체인 Hibernate가 동작하면서 발생한 SQL의 가독성을 높여준다.
